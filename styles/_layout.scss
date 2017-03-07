@@ -8,11 +8,11 @@ $padding-sides-for-full-width: 2rem;
 
 
 // mixins for page layout
-@mixin main-column-centered() {
+@mixin main-column-centered($width) {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  max-width: $max-width-main-column;
+  max-width: $width;
 }
 
 
@@ -24,11 +24,24 @@ header {
 
 
 main {
-  @include main-column-centered();
+  @include main-column-centered($max-width-main-column);
 }
 
 
 footer {
   padding-right: $padding-sides-for-full-width;
   padding-left: $padding-sides-for-full-width;
+}
+
+.tagline {
+  @include main-column-centered($max-width-main-column*.6);
+
+}
+
+.marketing-message {
+  @include main-column-centered($max-width-main-column*.6);
+}
+
+.contact {
+  @include main-column-centered($max-width-main-column*.6);
 }
