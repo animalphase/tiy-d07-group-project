@@ -1,1 +1,19 @@
 
+.tagline {
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 2rem;
+  color: $color-primary;
+  line-height: 1.4;
+  text-shadow: 1px 1px 0 rgba(255,255,255,.3),
+    2px 2px 0 rgba(86,98,112,.3);
+}
+
+.marketing-message {
+  padding: 2rem;
+  font-size: 1.5em;
+}
+
+.contact {
+  padding: 2rem;
+}
