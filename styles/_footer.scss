@@ -1,8 +1,11 @@
 footer {
-  border-top: 3px solid $color-borders;
-  text-align: center;
+  background: $color-primary;
+  color: $color-background;
+  padding-top:2rem;
+  padding-bottom: 2rem;
 }
 
 p {
-  color: $color-text-primary;
+  margin: 0;
+  padding: 0;
 }
