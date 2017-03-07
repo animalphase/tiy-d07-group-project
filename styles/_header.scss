@@ -1,7 +1,13 @@
-h1 {
-  font-family: arial;
+header {
+  text-align: center;
+  background-color: $color-background;
 }
 
-h2 {
-  color: blue; 
+header img {
+  width: 100px;
+  height: 75px;
+}
+
+h1 {
+  color: $color-text-primary;
 }
