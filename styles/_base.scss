@@ -1,8 +1,15 @@
-main {
+body {
+  font-family: $helvetica;
+  background: $color-background;
+  color: $color-text-primary;
   text-align: center;
 }
 
-p {
-  // comment out to use main.scss colors
-  // color: $color-text-primary;
+a {
+  color: $color-primary;
+  text-decoration: none;
+  transition: .1s ease all;
 }
+
+a:hover {
+  color: $color-link-hover;

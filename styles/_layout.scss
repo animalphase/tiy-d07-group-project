@@ -1,0 +1,34 @@
+
+// variables for page layout
+$medium-and-up: min-width 700px;
+$large-and-up: min-width 1100px;
+
+$max-width-main-column: 60rem;
+$padding-sides-for-full-width: 2rem;
+
+
+// mixins for page layout
+@mixin main-column-centered() {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $max-width-main-column;
+}
+
+
+
+header {
+  padding-right: $padding-sides-for-full-width;
+  padding-left: $padding-sides-for-full-width;
+}
+
+
+main {
+  @include main-column-centered();
+}
+
+
+footer {
+  padding-right: $padding-sides-for-full-width;
+  padding-left: $padding-sides-for-full-width;
+}
