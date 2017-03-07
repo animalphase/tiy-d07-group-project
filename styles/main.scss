@@ -2,18 +2,22 @@
 @import "libraries/node_modules/bourbon/app/assets/stylesheets/bourbon";
 @import "libraries/node_modules/bourbon-neat/core/neat";
 
-/* TODO:
-include bourbon
-include bourbon-neat */
 
-
+// Define Variables
+$color-primary: #A593E0;
+$color-text-primary: #566270;
+$color-link: $color-primary;
+$color-background: #FFFFF3;
+$color-borders: #E0E3DA;
 
 // Import partials
 @import "base";
 @import "header";
 @import "footer";
 
+
 body {
-  color: red;
+  background: $color-background;
+  color: $color-text-primary;
   @include grid-visual;
 }
